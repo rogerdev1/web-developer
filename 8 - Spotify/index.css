@@ -1,0 +1,200 @@
+html{
+    overflow-x: hidden;
+
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-image: url(capa.png), url(projeto-inicial-spotify/imagens/ruido.png), linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav.transparente{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+h1{
+    font-weight: 600;
+    letter-spacing: -0.06em;
+    margin-bottom: 50px;
+    color: aliceblue;
+}
+
+footer{
+    background-color: black;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+/* ================================== MEDIA QUERIES ================================== */
+
+@media (max-width: 767.98){
+    
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    h1{
+        font-size: 2em;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1{
+        font-size: 3em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1{
+        font-size: 4em;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1{
+        font-size: 5em;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    h1{
+        font-size: 6em;
+    }
+}
+
+
+/* =============================================== CABEÇALHO ============================================= */
+
+.navbar-light .navbar-nav .nav-link {
+    color: aliceblue;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: aquamarine;
+}
+
+.navbar-light .navbar-toggler{
+    color: rgba(255,255, 255, 0.5);
+    border-color: rgba(255,255, 255, 0.5);
+}
+
+.divisor{
+    width: 1px;
+    background-color: wheat;
+    margin: 12px 15px;
+}
+
+/* =============================================== PRINCIPAL ============================================= */
+
+/* ======================================= PRIMEIRA PARTE ======================================= */
+
+#intro{
+    height: 920px;
+}
+
+.capa{
+    text-align: center;
+}
+
+.btn-custom{
+    color: wheat;
+    border-radius: 500px;
+    -moz-border-radius: 500px;
+    -webkit-border-radius: 500px;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 15px;
+}
+
+.btn-roxo{
+    background-color: #7c26f8;
+}
+
+.btn-roxo:hover{
+    background-color: #7112f7;
+    color: wheat;
+}
+
+.btn-branco{
+    border-color: wheat;
+}
+
+.btn-branco:hover{
+    background-color: wheat;
+    color: black;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 5%;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    transition: 1.5s;
+}
+
+/* ======================================= SEGUNDA PARTE ======================================= */
+
+#serviços{
+    padding: 20px 0;
+}
+
+#serviços h2, h3{
+    color: #7112f7;
+}
+
+/* ======================================= TERCEIRA PARTE ======================================= */
+
+#recursos h2{
+    font-weight: 600;
+    letter-spacing: -0.06em;
+    color: aliceblue;
+    font-size: 3em;
+}
+
+#recursos h3{
+    font-weight: 600;
+    letter-spacing: -0.06em;
+    color: aquamarine;
+}
+
+#recursos p{
+    font-weight: 600;
+    letter-spacing: -0.06em;
+    color: aliceblue;
+
+}
+
+.rotacionar{
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+/* =============================================== RODPÉ ============================================= */
+
+footer h4{
+    color: grey;
+}
+
+footer .navbar-nav a{
+    color: white;
+}
+
+footer .navbar-nav a:hover{
+    color: aqua;
+    text-decoration: none;
+}
+
+footer ul li{
+    float: right;
+}
