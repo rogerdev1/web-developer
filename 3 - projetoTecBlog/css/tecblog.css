@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    background-color: rgb(1, 1, 40);
+    padding-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+main{
+    margin: 30px 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    color:  rgb(1, 1, 40);
+}
+
+aside{
+    width: 30%;
+    top: -500px;
+}
+
+footer{
+    background-color: rgb(1, 1, 40);
+    padding: 20px 40px;
+    height: 310px;
+}
+
+
+/*================================================= CABEÇALHO ===========================================*/
+
+.titulo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+}
+
+/*================================================= MENU INICIAL ===========================================*/
+
+.menu-inicial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.menu-inicial a {
+    padding: 20px 20px;
+    color: aliceblue;
+}
+
+.menu-inicial a:hover{
+    background-color: aliceblue;
+    color: rgb(1, 1, 40);
+    transition: 0.3s;
+    padding: 10px;
+}
+
+/*                                 === MENU RECOLHIVEL, BARRA DE PESQUISA E LOGIN ==                                              */
+
+.barra-menu-buscar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 20px;
+    
+}
+
+#menu-todos{
+    height: 45px;
+    display: flex;
+}
+
+#menu-todos ul{
+    background-color: rgb(252, 252, 253);
+    color: rgb(20, 20, 20);
+}
+
+.search-submit{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#buscar{
+    height: 45px;
+    width: 500px;
+    border: transparent;
+    border-radius: 20px 0 0 20px;
+    background-color:rgb(226, 225, 225);
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+#buscar[placeholder]{
+    padding: 0 20px;
+}
+
+#buscar:focus{
+    border: none;
+}
+
+#buscar-submit{
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    border-top: transparent;
+    border-left: transparent;
+    background-color:rgb(226, 225, 225);
+}
+
+.login-cadastro{
+    display: flex;
+}
+
+#login{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    padding-left: 4px;
+    background-color: aliceblue;
+    color: rgb(86, 86, 86);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#login img{
+    height: 30px;
+}
+
+/*================================================= MAIN ===========================================*/
+/*                                          === POSTAGENS ==                                              */
+
+.imagem-postagens img{
+    width: 99%;
+    margin-top: 10px;
+}
+
+.imagem-postagens figcaption{
+    margin-left: 10px;
+}
+
+.postagens{
+    width: 60%;
+    display:block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.postagens hr{
+    width: 105%;
+}
+
+/*                                 === MENU LATERAL ==                                              */
+
+
+.menu-lateral{
+    position: relative;
+    top: 10px;
+    left: 30%;
+}
+
+.menu-lateral ul{
+    list-style: none;
+    background-color: rgb(179, 179, 179);
+    color: rgb(86, 86, 86);
+}
+
+.menu-lateral h3{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.menu-lateral li{
+    background-color: white;
+    padding: 5px 0;
+}
+
+.menu-lateral li a{
+    color: black;
+}
+
+.menu-lateral li a:hover{
+    color: rgb(1, 1, 40);
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.menu-lateral a{
+    text-decoration: none;
+    padding: 20px;
+    color: aliceblue; 
+    
+}
+
+/*================================================= RODAPÉ ===========================================*/
+/*                                 === REDES SOCIAIS ==                                              */
+
+footer hr{
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+
+#redes_sociais_rodape{
+    height: 80px;
+    padding-bottom: 10px;
+}
+
+#redes_sociais_rodape h2{
+    color: aliceblue;
+    padding-bottom: 10px;
+}
+
+#redes_sociais_rodape a{
+    margin-left: 20px;
+}
+
+.menu-rodape{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 50px;
+}
+
+.menu-rodape ul{
+    color: aliceblue;
+ }
+
+.menu-rodape li{
+    padding: 5px;
+}
+
+.menu-rodape a{
+    color: aliceblue;
+}
+
+.menu-rodape a:hover{
+    color: rgb(1, 1, 40);
+    transition: 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#ultimo{
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+/* =================================== WIDGETS =============================================== */
+
+.flutuante{
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    margin: 0 15px;
+}
+
+.flutuante img{
+    width: 71px;
+ }
+ 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roger Tec - Cadastre-se</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <strong><span style="color: rgb(86, 86, 86);">Roger</span><span style="color: aliceblue;">Tec</span></strong>
+        </div>
+        <br>
+        <nav class="menu-inicial">
+            <strong>
+                <a href="index.html">Home</a>
+                <a href="jogos.html">Jogos</a>
+                <a href="celulares.html">Celulares</a>
+                <a href="informatica.html">Informática</a>
+                <a href="eletro.html">Eletrônicos</a>
+            </strong>
+        </nav>
+    </header>
+    <main>
+        <h1>Cadastre-se</h1>
+        <form class="formulario-cadastro" action="">
+            <fieldset class="dados-pessoais">
+                <legend>Dados Pessoais</legend>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" placeholder="Seu Nome Completo">
+                
+                <label for="nascimento">Data de Nascimento: </label>
+                <input type="date" id="nascimento" placeholder="">
+
+                <label for="nome-mae">Nome do Mãe: </label>
+                <input type="text" id="nome-mae" placeholder="Nome Completo da Sua Mãe">
+
+                <label for="nome-pai">Nome do Pai: </label>
+                <input type="text" id="nome-pai" placeholder="Nome Completo do Seu Pai">
+                
+                <label for="sexo">Sexo: </label>
+                    Masculino <input type="radio" name="sexo" value="masculino" id="sexo"> 
+                    Feminino  <input type="radio" name="sexo" value="feminino" id="sexo">
+            </fieldset>
+            <fieldset class="dados-funcionais">
+                <legend>Dados Funcionais</legend>
+                <label for="email">E-mail: </label><br> 
+                <input type="email" id="email" placeholder="Ex: e-mail@email.com"><br>
+                <label for="telefone">Telefone: </label><br>
+                <input type="tel" id="telefone" placeholder="(DDD) XXXXX-XXXX"><br>
+                <div class="loc-nascimento">
+                    <label>Local de Nascimento:</label> <br>
+                    <label for="pais" >País: </label>
+                        <select name="pais" id="pais"> 
+                            <option value="bra">BRA</option>
+                            <option value="usa">USA</option>
+                            <option value="por">POR</option>
+                            <option value="ing">ING</option>
+                            <option value="esp">ESP</option>
+                            <option value="arg">ARG</option>
+                        </select>
+
+                    <label for="estado">Estado: </label>
+                    <select name="estado" id="estado"> 
+                        <option value="am">AM</option>
+                        <option value="rj">RJ</option>
+                        <option value="rn">RN</option>
+                        <option value="rs">RS</option>
+                        <option value="sp">SP</option>
+                        <option value="to">TO</option>
+                    </select>
+
+                    <label for="estado">Cidade: </label>
+                    <select name="estado" id="estado"> 
+                        <option value="poa">Porto Alegre</option>
+                        <option value="est">Esteio</option>
+                        <option value="can">Canoas</option>
+                        <option value="alv">Alvorada</option>
+                        <option value="via">Viamão</option>
+                        <option value="sm">Santa Maria</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="confirma-cadastro">
+                <input type="checkbox" id="confirma-dados" value="confirma"><label for="confirma-dados"> Confirmo que todos os dados acima declarados são verdadeiros.</label>
+                <input type="checkbox" id="concordo-politica" value="confirma"><label for="concordo-politica"> Ao criar uma conta, você concorda com as <a href="#condicoesDeUso.html">Condições de Uso</a> da RogerTec e com a <a href="politicadeprivacidade.html">Política de privacidade.</a></label>
+                <button type="submit" id="cadastro">Cadastrar-se</button>
+            </div>
+            
+        </form>
+    </main>
+    <footer>
+        © Todos os direitos reservados.
+    </footer>
+    <div class="flutuante">
+        <a href="whats" target="_blank">
+            <img src="WhatsApp-Logo.png" alt="" >
+        </a>
+    </div>
+</body>
+</html>
