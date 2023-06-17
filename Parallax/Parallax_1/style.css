@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body, html{
+    height: 100%;
+    background-color: rgb(1, 68, 1);
+    background-image: url(1_rio-grande-do-sul.jpg);
+}
+
+html, body,  .parallax, .conteudo{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: rgba(54, 54, 54, 0.1);
+    transition: 0.7s;
+}
+
+header.fixo{
+    background-color: rgb(54, 54, 54);
+    transition: 0.7s;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.nav-item a{
+    color: black;
+    font-size: 1.1rem;
+}
+
+.parallax{
+    padding: 50px 80px;
+    height: 100%;
+}
+
+#imagem-1, #imagem-2, #imagem-3, #imagem-4,
+#imagem-5, #imagem-6, #imagem-7, #imagem-8, .conteudo{
+    height: 100vh;
+}
+
+#imagem-2{
+    background-image: url(2_serra-gaucha.jpg);
+}#imagem-3{
+    background-image: url(3_palacio-piratini.jpg);
+}#imagem-4{
+    background-image: url(4_derrubadas-salto-yucumã.jpg);
+}#imagem-5{
+    background-image: url(5_tunel-verde.png);
+}#imagem-6{
+    background-image: url(6_litoral-torres.jpg);
+}#imagem-7{
+    background-image: url(7_ruinas-sao-miguel.jpg);
+}#imagem-8{
+    background-image: url(8_canios-cambara-do-sul.jpg);
+}
+
+
+.titulo{
+    position: relative;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.parallax .titulo span.titulo-imagem{
+    background-color: black;
+    padding: 18px;
+    color: aliceblue;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding: 10px 80px;
+    background-color:rgba(0, 0, 0, 0.2);
+    color: white;
+    background-image: url(tradicoes.jpg);
+}
+
+
+.conteudo p{
+    margin-top: 30px;
+    text-align: justify;
+}
+
+@media (max-width: 900px){
+    .parallax .titulo span.titulo-imagem{
+        letter-spacing: 2px;
+    }
+}
+@media (max-width: 650px){
+    .parallax .titulo span.titulo-imagem{
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+}
